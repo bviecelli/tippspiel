@@ -4,13 +4,13 @@ load File.expand_path('../initializers/01_constants.rb', __FILE__)
 set :cap_tournament_name, TOURNAMENT_NAME
 
 # your Uberspace username
-set :user, 'soemo'
+set :user, 'juwjd349k8zetil6'
 
 set :scm, :git
 
-set :repo_url, 'git@github.com:soemo/tippspiel.git'
+set :repo_url, 'git@github.com:bviecelli/tippspiel.git'
 
-server 'sabic.uberspace.de', user: fetch(:user), roles: %w{app db web}
+server 'j1r4n2ztuwm0bhh5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', user: fetch(:user), roles: %w{app db web}
 
 set :ssh_options, { :forward_agent => true}
 
