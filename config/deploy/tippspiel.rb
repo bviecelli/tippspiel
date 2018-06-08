@@ -1,12 +1,12 @@
 # a name for your app, will be used for your gemset,
 # databases, directories, etc.
-set :application, 'tippspiel.soemo.org'
+set :application, 'bolao-copa-2018.herokuapp.com'
 
 set :branch, 'master'
 
 # By default, your app will be available in the root of your Uberspace. If you
 # have your own domain set up, you can configure it here
-set :domain, 'tippspiel.soemo.org'
+set :domain, 'bolao-copa-2018.herokuapp.com'
 
 set :database_name_suffix, "#{fetch(:cap_tournament_name).downcase.gsub(' ', '_')}"
 
