@@ -3,9 +3,9 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   adapter: mysql2
   encoding: utf8
-  username: root
-  password:
-  host: localhost
+  username: juwjd349k8zetil6
+  password: <%= ENV.fetch("SECRET_DB") %>
+  host: j1r4n2ztuwm0bhh5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
 
 development:
   <<: *default
@@ -18,4 +18,4 @@ test:
 # prod db == dev db
 production:
   <<: *default
-  database: tippspiel_development_wm2018 # hier nutzen wir auch lokal unser dev DB
+  database: mm2gyfzbgetq6sea # hier nutzen wir auch lokal unser dev DB
